@@ -1,0 +1,6 @@
+{
+    "service": {
+        "name": "Zeus",
+        "check_update_interval":"0s"
+    }
+}

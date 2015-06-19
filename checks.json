@@ -1,0 +1,161 @@
+{
+ "checks": [
+ 	{
+            "id": "Zeus-UI",
+            "name": "ping to Zeus UI",
+            "script": "python ping.py 10.0.0.20 80",
+            "interval": "30s"
+    },
+    {
+            "id": "Influx2",
+            "name": "ping to Influx2",
+            "script": "python ping.py 10.0.0.74 8086 >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "Influx1",
+            "name": "ping to Influx1",
+            "script": "python ping.py 10.0.0.73 8086  >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "Storm-Supervisor-7",
+            "name": "ping to Storm Sup 7 ",
+            "script": "ping -c1 10.0.0.72 >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "Storm-Supervisor-6",
+            "name": "ping to Storm Sup 6",
+            "script": "ping -c1 10.0.0.70  >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "Storm-Supervisor-5",
+            "name": "ping to Storm Sup 5",
+            "script": "ping -c1 10.0.0.71  >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "Storm-Supervisor-4",
+            "name": "ping to Storm Sup 4",
+            "script": "ping -c1 10.0.0.68  >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "Storm-Supervisor-3",
+            "name": "ping to Storm Sup 3",
+            "script": "ping -c1 10.0.0.34  >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "Storm-Supervisor-2",
+            "name": "ping to Storm Sup 4",
+            "script": "ping -c1 10.0.0.33  >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "Storm-Supervisor-1",
+            "name": "ping to Storm Sup 3",
+            "script": "ping -c1 10.0.0.32  >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "Fluentd-3",
+            "name": "ping to FluentD 3",
+            "script": "ping -c1 10.0.0.32  >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "Fluentd-2",
+            "name": "ping to FluentD 2",
+            "script": "ping -c1 10.0.0.29  >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "Fluentd-1",
+            "name": "ping to FluentD 1",
+            "script": "ping -c1 10.0.0.27  >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "Zookeeper",
+            "name": "ping to Zookeeper",
+            "script": "python ping.py 10.0.0.22 2181",
+            "interval": "5s"
+    },
+    {
+            "id": "API",
+            "name": "Ping to API server",
+            "script": "python ping.py 10.0.0.21 80",
+            "interval": "5s"
+    },
+    {
+            "id": "Kafka1",
+            "name": "ping to Kafka1",
+            "script": "python ping.py 10.0.0.6 9092",
+            "interval": "5s"
+    },
+    {
+            "id": "Kafka2",
+            "name": "ping to Kafka2",
+            "script": "python ping.py 10.0.0.6 9092",
+            "interval": "5s"
+    },
+    {
+            "id": "Kafka3",
+            "name": "ping to Kafka3",
+            "script": "python ping.py 10.0.0.6 9092",
+            "interval": "5s"
+    },
+    {
+            "id": "Admin",
+            "name": "ping to Admin",
+            "script": "python ping.py 10.0.0.5 80",
+            "interval": "5s"
+    },
+    {
+            "id": "Auth Port 1",
+            "name": "ping to Auth port 3000",
+            "script": "python ping.py 10.0.0.39 3000",
+            "interval": "5s"
+    },
+    {
+            "id": "Auth Port 2",
+            "name": "ping to Auth port 9000",
+            "script": "python ping.py 10.0.0.39 9000",
+            "interval": "5s"
+    },
+    {
+            "id": "ES Loadbalancer",
+            "name": "ping to ES Load Balancer",
+            "script": "ping -c1 10.0.0.37 >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "Influx Loadbalancer",
+            "name": "ping to Influx Load Balancer",
+            "script": "ping -c1 10.0.0.35 >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "ESCL1",
+            "name": "Curl to ESCL1",
+            "script": "curl http://10.0.0.80:9200  >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "ESCL2",
+            "name": "Curl to ESCL2",
+            "script": "curl 10.0.0.81:9200  >/dev/null",
+            "interval": "5s"
+    },
+    {
+            "id": "ESCL3",
+            "name": "Curl to ESCL3",
+            "script": "curl 10.0.0.82:9200  >/dev/null",
+            "interval": "5s"
+    }
+    ]
+}
+
